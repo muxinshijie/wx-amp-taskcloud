@@ -117,25 +117,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.muxin.mlearning.start.MlearningApplication</mainClass>
-                </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <!--可以把依赖的包都打包到生成的Jar包中-->
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.flywaydb</groupId>
-                <artifactId>flyway-maven-plugin</artifactId>
-            </plugin>
             <!--        mvn compile 命令会将 src/main/resources 下的资源文件复制到编译输出目录下-->
             <!--        接着会将 src/main/java 目录下源代码编译输出到编译输出目录下。编译输出目录默认是 target/classes 目录-->
             <plugin>
