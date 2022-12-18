@@ -10,15 +10,14 @@
     </parent>
 
     <groupId>com.muxin.mlearning</groupId>
-    <artifactId>wx-amp-taskcloud</artifactId>
+    <artifactId>wx-amp-rent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>wx-amp-taskcloud-app</module>
-        <module>wx-amp-taskcloud-domain</module>
-        <module>wx-amp-taskcloud-infrastructure</module>
-        <module>wx-amp-taskcloud-plugin</module>
-        <module>wx-amp-taskcloud-start</module>
+        <module>wx-amp-rent-app</module>
+        <module>wx-amp-rent-domain</module>
+        <module>wx-amp-rent-infrastructure</module>
+        <module>wx-amp-rent-start</module>
     </modules>
 
     <properties>
@@ -30,22 +29,17 @@
         <dependencies>
             <dependency>
                 <groupId>com.muxin.mlearning</groupId>
-                <artifactId>wx-amp-taskcloud-app</artifactId>
+                <artifactId>wx-amp-rent-app</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.muxin.mlearning</groupId>
-                <artifactId>wx-amp-taskcloud-domain</artifactId>
+                <artifactId>wx-amp-rent-domain</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.muxin.mlearning</groupId>
-                <artifactId>wx-amp-taskcloud-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
-            </dependency>
-            <dependency>
-                <groupId>com.muxin.mlearning</groupId>
-                <artifactId>wx-amp-taskcloud-infrastructure</artifactId>
+                <artifactId>wx-amp-rent-infrastructure</artifactId>
                 <version>1.0-SNAPSHOT</version>
             </dependency>
 

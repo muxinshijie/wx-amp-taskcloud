@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "manager")
+@RequestMapping(value = "")
 public class ManagerController {
     @Resource
     private TaskDomainService taskDomainService;
