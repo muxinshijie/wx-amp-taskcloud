@@ -3,8 +3,11 @@ server:
   servlet:
     context-path: /${spring.application.name}/
 spring:
+  main:
+    # 当遇到同样名字的时候，是否允许覆盖注册
+    allow-bean-definition-overriding: true
   datasource:
-    url: jdbc:mysql://120.79.28.147:3306/muxin?characterEncoding=UTF-8&serverTimeZone=GMT&2B8&useSSL=false
+    url: jdbc:mysql://120.79.28.147:3306/rent?characterEncoding=UTF-8&serverTimeZone=GMT&2B8&useSSL=false
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: Liu-940815
@@ -42,10 +45,17 @@ spring:
     encoding: UTF-8
     table: flyway_schema_history
     validate-on-migrate: true
-  #  Spring Boot工程嵌入的tomcat限制了请求的文件大小
+  #  Spring Boot工程嵌入的tomcat限制了请求的文件大小，支持fastdfs
   servlet:
     multipart:
       max-file-size: 10MB
       max-request-size: 100MB
   application:
     name: wx-amp-rent
+
+we-chat:
+  appid: wx9df5094ea7f8df2a
+  secret: cd7dfb5c021065755aad6eb08daac8d9
+  login-url: https://api.weixin.qq.com
+ali-server:
+  ssl-path: https://muxinshijie.top/
